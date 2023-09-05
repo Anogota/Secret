@@ -1,4 +1,4 @@
-1. Which software is listening on port 80?
+![obraz](https://github.com/Anogota/Secret/assets/143951834/0359902e-6a0d-40cb-8193-de4b4a4e8b25)1. Which software is listening on port 80?
 
 ![obraz](https://github.com/Anogota/Secret/assets/143951834/44c39bec-b4ba-4000-80d7-7e50927fc14f)
 
@@ -22,3 +22,13 @@ and the answer for this question is .git
 I don't know this answer, but when you do know something use -h, always help, and here is the answer 
 
 ![obraz](https://github.com/Anogota/Secret/assets/143951834/e2bdf342-16c2-4401-9060-a2b9ac9176d1)
+
+5.Which git commit updates the source to remove a sensitive information?
+First what we need to do is navigate to local-web, than write in terminal git log, check everything and what's look intresting on this screanshoot, i think removed .env for security reasons and this is a answer for this question: 67d8da7a0e53d8fadeb6b36396d86cdcd4f6ec78
+
+![obraz](https://github.com/Anogota/Secret/assets/143951834/a01cfc8c-0d70-4b4e-82e1-394b507f1f89)
+
+6.What is the variable that used to hold this secret?
+This is pretty simple to see, first we need thisn long number from previous task and copy, after this we need write in terminal git show 67d8da7a0e53d8fadeb6b36396d86cdcd4f6ec78 this shows as a variable.
+
+![obraz](https://github.com/Anogota/Secret/assets/143951834/030530cc-be29-4905-b920-04f0c33fd20b)
