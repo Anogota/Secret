@@ -32,3 +32,9 @@ First what we need to do is navigate to local-web, than write in terminal git lo
 This is pretty simple to see, first we need thisn long number from previous task and copy, after this we need write in terminal git show 67d8da7a0e53d8fadeb6b36396d86cdcd4f6ec78 this shows as a variable.
 
 ![obraz](https://github.com/Anogota/Secret/assets/143951834/030530cc-be29-4905-b920-04f0c33fd20b)
+
+7.Which endpoint is vulnerable to command injection?
+first what we need to do is write in terminal git show, this shows as a code, from this code we will find endpoit vulnerable, after the short analiz i know, this a /logs
+
+![obraz](https://github.com/Anogota/Secret/assets/143951834/117eef13-2400-4e97-b53e-c877e015e923)
+
