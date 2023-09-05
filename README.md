@@ -72,3 +72,13 @@ rember to setup better shell by this command: python3 -c 'import pty; pty.spawn(
 and here is the flag
 
 ![obraz](https://github.com/Anogota/Secret/assets/143951834/8493ebc8-fd02-4263-a2b8-8dc3a99b8a73)
+
+10.What is the non default binary with the Set UID bit enabled?
+We can see every UID by this command:find / -perm -u=s -type f 2>/dev/null
+
+![obraz](https://github.com/Anogota/Secret/assets/143951834/48706bed-7b5d-4154-9549-79aac941cc2f) And here is the file
+
+11.Which folder stores the core dumps that contain information about what the program was doing right before the crash?
+Here in thisk task i did many recon, because i don't know the answer, but after quick recon i found this.
+
+![obraz](https://github.com/Anogota/Secret/assets/143951834/f7d802d9-da5f-494f-b2d4-6afffb9bd1f2)
