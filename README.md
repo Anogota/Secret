@@ -38,3 +38,37 @@ first what we need to do is write in terminal git show, this shows as a code, fr
 
 ![obraz](https://github.com/Anogota/Secret/assets/143951834/117eef13-2400-4e97-b53e-c877e015e923)
 
+8. Which user must a JWT token show in order to use /logs?
+Still we need to look a code and then we see this user. This is a pretty simple code, u can understand this code without background programing, focus on it and u will understand i hope :P lol
+
+![obraz](https://github.com/Anogota/Secret/assets/143951834/66f544e2-07c0-4e5b-9e15-87f91af05ff1)
+
+9.Submit the flag located in the dasith user's home directory.
+Here will be many steps focus, first what we need to acces the /logs, after search i saw when i try go to the page /logs i got error, but there another way to go /logs, u need go to /api/logs and we can see there ![obraz](https://github.com/Anogota/Secret/assets/143951834/e1431f75-8d1c-4494-bcd9-1aefb7b0f945)
+I found awesome tool, to create a JWT token jwi.io
+Here how it must look, to create this JWT token, to access this page.
+
+![obraz](https://github.com/Anogota/Secret/assets/143951834/ae222201-fe93-4c3d-a28b-34f48de40db6)
+
+there is also secret key, u need insert this key from task 6, and also username from task 8, here u need collect in one, everything what's you have.
+And then go to burp, intercept the trafic, write auth-token: <here ur token> here is example how it must look.
+
+![obraz](https://github.com/Anogota/Secret/assets/143951834/4084cf5d-8780-4793-86eb-cc022d8f3628)
+
+And if u do this, we see request.
+
+![obraz](https://github.com/Anogota/Secret/assets/143951834/51bcae63-1d6a-4af9-ad03-70985b3322c0)
+
+And we see cmd? What we can do with it, if u have more experience we can think about command injection, but if you don't have first what you need to do is, USE GOOGLE!
+
+![obraz](https://github.com/Anogota/Secret/assets/143951834/b08cfba7-780a-45e8-a38f-236caa2d25e6)
+
+I aprroved there is a command injection, we can inject some reverse shell, let's go and take a user flag :P and rember to setup a nc 
+And finnaly we got this.
+
+![obraz](https://github.com/Anogota/Secret/assets/143951834/2a69fe5e-7c6e-4f82-a4f9-be59dbf2a918)
+
+rember to setup better shell by this command: python3 -c 'import pty; pty.spawn("/bin/bash")'
+and here is the flag
+
+![obraz](https://github.com/Anogota/Secret/assets/143951834/8493ebc8-fd02-4263-a2b8-8dc3a99b8a73)
